@@ -1,5 +1,21 @@
-#parents div{
-    margin: (0,0,0,0,);
+
+h1{
+    margin:0;
+    color: rgb(255, 255, 255);
+}
+
+p{
+    margin:0;
+    font-size: 20px;
+}
+
+body{
+    margin:0;
+}
+
+a{
+    font-size: 20px;
+    color: rgb(255,255,255);
 }
 
 header{
@@ -8,14 +24,39 @@ header{
     text-align: center;
 }
 
-h1{
-    color: rgb(255, 255, 255);
+main{
+    padding: 10px;
+    margin: 10px;
+}
+
+#patent{
+    display: flex;
+}
+
+@media (max-width: 768px){
+    #parent{
+        display: flex;
+        flex-direction: row;
+}
+}
+
+.contents{
+    border: solid 3px rgb(238, 204, 204);
+    flex-basis: 25%;
+    padding: 10px 15px 10px 15px;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
 }
 
 h2{
     font-size: 25px;
-    text-align: center;
     border-bottom: dotted 3px rgb(236, 122, 122);
+}
+
+@media(max-width: 768px){
+    p{
+        font-size: 30px;
+    }
 }
 
 h2::before{
@@ -23,13 +64,9 @@ h2::before{
     color: rgb(239,111,139);
 }
 
-.contents{
-    border: 3px solid rgb(238, 204, 204);
-    flex-basis: 25%;
-    padding: 10px 15px;
-    margin: 20px 0px;
-    display: flex;
-    justify-content: center;
+img{
+    margin: 10px 10px 0px 0px;
+    width: 70%;
 }
 
 p:nth-of-type(2)::first-letter{
@@ -37,23 +74,11 @@ p:nth-of-type(2)::first-letter{
     color: rgb(97, 206, 249);
 }
 
-main{
-    margin: 10px,10px,10px,10px;
-}
-
-#patent div{
-    display: flex;
-    justify-content: center;
-}
-
-.contents{
-    width: 3px,;
-}
-
 footer{
     background-color: rgb(244, 79, 79);
     text-align: center;
 }
+
 
 footer a {
     color: rgb(255, 255, 255);
